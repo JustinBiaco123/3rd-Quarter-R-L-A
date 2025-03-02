@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3rd Quarter Real-life Application</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgba(51, 51, 51, 0.8); 
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+            transition: background-color 0.3s ease;
+        }
+
+        .section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .home {
+            background-image: url('doors.jpg'); 
+        }
+
+        .about {
+            background-image: url('BS.jpg'); 
+        }
+
+        .services {
+            background-image: url('geometry dash.jpg'); 
+        }
+
+        .portfolio {
+            background-image: url('minecraft.jpg'); 
+        }
+
+        .blog {
+            background-image: url('among us.jpg'); 
+        }
+
+        .contact {
+            background-image: url('roblox.jpg'); 
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .section {
+                padding: 80px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Lesson 1-2</a></li>
+            <li><a href="#services">Lesson 3</a></li>
+            <li><a href="#portfolio">Lesson 4</a></li>
+            <li><a href="#blog">Lesson 5</a></li>
+            <li><a href="#contact">Lesson 6</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section home">
+        <h1>Welcome to my Website</h1>
+        <p>This is the home section.</p>
+        <br>
+        <h3> This website presents the following: </h3>
+        <ul>
+        <li> Real-life applications of every lessons </li>
+        <li> Some benefits the lessons will give us </li>
+        <li> Nostalgic background vibes </li>
+        </ul>
+    </section>
+
+    <section id="about" class="section about">
+        <h1>Lesson 1-2:</h1>
+        <ul>
+        <li>Interactive Web Pages: <br>
+JavaScript makes elements on a webpage interactive, such as buttons, forms, and animations. For example, when a user clicks a "like" button, the number of likes updates in real time. </li>
+        <li>Form Validation: 
+Use JavaScript to validate form inputs (e.g., checking if a user has entered a valid email or password before submitting). </li>
+        <li>Real-Time Calculations: 
+Websites like loan calculators or currency converters rely on JavaScript to calculate values instantly as the user inputs data. </li>
+        </ul>
+    </section>
+
+    <section id="services" class="section services">
+        <h1>Lesson 3</h1>
+         <ul>
+         <li>Error Prevention in User Inputs: Proper syntax ensures smooth error handling in applications, such as alerts when users make mistakes while filling out a form (e.g., missing required fields or incorrect formatting). </li>
+         <li>Structured Data Display: Correct use of syntax can help in displaying structured data, such as showing a list of items with formatted information on an e-commerce page. </li>
+         <li>Conditional Statements: JavaScript uses conditionals (like if statements) to check conditions and execute actions based on user inputs, such as showing a special offer if a customer meets certain criteria. </li>
+        </ul>
+
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <h1>Lesson 4:</h1>
+        <ul>
+        <li>Shopping Cart Calculations: JavaScript stores variables like item prices, quantities, and discounts to calculate the total price in real time as a user adds products to a shopping cart. </li>
+        <li>User Customization: Websites use JavaScript variables to store user preferences, such as theme color choices  or layout settings, and apply these preferences across sessions. </li>
+        <li>Dynamic Content: JavaScript operators can manipulate data on the page, such as calculating the difference between two dates or adjusting the number of available items in real-time when inventory changes. </li>
+        </ul>
+    </section>
+
+    <section id="blog" class="section blog">
+        <h1>Lesson 5:</h1>
+        <ul>
+        <li>Reusable Code Blocks for Common Actions: Functions allow developers to write code once and reuse it. For example, a function could be used for validating multiple forms on the same website, saving time and preventing redundancy. </li>
+        <li>Event Handling: Functions are used to handle events like clicks, mouseovers, and keystrokes. For instance, a function could change the content of a webpage when a user clicks on a specific button. </li>
+        <li>Form Submission Handling: JavaScript functions are often used to prevent page reloads and instead handle form submissions asynchronously, providing a smoother user experience (e.g., submitting a comment or review without refreshing the page). </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h1>Lesson 6:</h1>
+        <ul>
+        <li>DOM Manipulation: JavaScript properties and methods like .innerHTML, .classList, and .style allow you to change the content, style, and behavior of HTML elements. For example, hiding or showing content when a user clicks a button.</li>
+        <li>External JavaScript for Optimization: External .js files help in optimizing website performance by allowing browsers to cache the script and reduce loading times across multiple pages. </li>
+        <li>Interactive User Interface: JavaScript can be used to change a page’s appearance dynamically based on user actions. For example, expanding and collapsing sections on an FAQ page or displaying tooltips when hovering over elements. </li>
+        <li>Real-Time Notifications: JavaScript can handle external notifications like chat updates, email alerts, or news updates, where external scripts are linked to notify the user without reloading the page. </li>
+        </ul>       
+        <br> <br>
+        <p align="center"> <img src="seal end.jpg" alt="cute end seal" height="450px" width="450px"/> </p>
+    </section>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+<audio controls autoplay loop style="width: 100%; height: 100%;"> 
+                <source src="lobby-classic-game.mp3" type="audio/mp3"> 
+                Your browser does not support the audio element. 
+</audio>
+</body>
+</html>
