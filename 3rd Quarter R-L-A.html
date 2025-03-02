@@ -194,5 +194,16 @@ Websites like loan calculators or currency converters rely on JavaScript to calc
                 <source src="lobby-classic-game.mp3" type="audio/mp3"> 
                 Your browser does not support the audio element. 
 </audio>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.getElementById("bg-music");
+
+        document.body.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    });
+</script>
 </body>
 </html>
