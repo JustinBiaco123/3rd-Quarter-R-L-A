@@ -195,14 +195,8 @@ Websites like loan calculators or currency converters rely on JavaScript to calc
                 Your browser does not support the audio element. 
 </audio>
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const audio = document.getElementById("bg-music");
-
-        document.body.addEventListener("click", function() {
-            if (audio.paused) {
-                audio.play();
-            }
-        });
+    window.addEventListener("click", function() {
+        document.getElementById("bg-music").muted = false;
     });
 </script>
 </body>
